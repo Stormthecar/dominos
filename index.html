@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamaican Dominoes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <header id="topbar">
+    <h1>🇯🇲 Jamaican Dominoes</h1>
+    <div id="scoreboard">
+      <div class="score-pill us">
+        <span class="team-label">We</span>
+        <span id="scoreUs">0</span>
+      </div>
+      <div class="score-target">to 200</div>
+      <div class="score-pill them">
+        <span class="team-label">Them</span>
+        <span id="scoreThem">0</span>
+      </div>
+    </div>
+    <button id="newGameBtn">New Game</button>
+  </header>
+
+  <main id="table">
+    <div class="seat seat-top">
+      <div class="seat-label">Partner (North)</div>
+      <div class="hand hand-top" id="hand-2"></div>
+    </div>
+
+    <div class="seat seat-left">
+      <div class="seat-label">West</div>
+      <div class="hand hand-left" id="hand-1"></div>
+    </div>
+
+    <div class="board-wrap">
+      <div id="board"></div>
+      <div id="centerMessage"></div>
+    </div>
+
+    <div class="seat seat-right">
+      <div class="seat-label">East</div>
+      <div class="hand hand-right" id="hand-3"></div>
+    </div>
+
+    <div class="seat seat-bottom">
+      <div class="seat-label">You</div>
+      <div class="hand hand-bottom" id="hand-0"></div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div id="log"></div>
+    <button id="passBtn" disabled>Pass</button>
+  </footer>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
