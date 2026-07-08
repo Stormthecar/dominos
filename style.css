@@ -204,6 +204,9 @@ html, body {
   border-radius: 50%;
   background: var(--pip);
 }
+.pip.empty {
+  background: transparent;
+}
 
 /* board tile placement */
 .tile.board-tile {
